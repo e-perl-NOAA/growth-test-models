@@ -6,28 +6,14 @@
 #_Source_code_at:_https://github.com/nmfs-ost/ss3-source-code
 
 # All changes I did to attempt seasons-as-years with 6 month seasons in the data file
-# 1. Changed endyr to be 2001.5
-# 2. Changed months/season to be 6
-# 3. Catch data: 
-#      - Expanded to have half years by halving the catch values
-# 4. Indices: 
-#      - Expanded to have half years by halving index and stderr values
-#      - Changed month to 1
-# 5. Length: 
-#      - Expanded to have half years by halving the Nsamp and the counts in each bin
-# 6. Age: 
-#      - Duplicated age error values for having two 6 month periods so each value appears twice
-#      - Expanded to have half years by halving the Nsamp and the counts in each bin 
-# 7. Mean size-at-age
-#      - Expanded to have half years by halving the Nsamp and the counts in each bin
+# 1. Changed months/season to be 6
 
 #_Start_time: Mon Sep 22 14:43:36 2025
 #_echo_input_data
 #C data file for simple example
 #V3.30.24.1;_safe;_compile_date:_Sep 18 2025;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_13.2
 1971 #_StartYr
-# Had to add .5 when using seasons-as-years
-2001.5 #_EndYr
+2001 #_EndYr
 # Had to change these when using seasons-as-years to have 6 months/season
  1 #_Nseas
  6 #_months/season
@@ -57,7 +43,7 @@
 # a   b   c   d   e   f 
 #_Catch data: year, seas, fleet, catch, catch_se
 #_catch_se:  standard error of log(catch)
-# Had to expand these to have half years by halving catch values when using seasons-as-years
+# Don't need to change catch data
 #_NOTE:  catch data is ignored for survey fleets
 -999 1 1 0 0.01
 1971   1 1 0 0.01
