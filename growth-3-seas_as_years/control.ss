@@ -52,11 +52,14 @@
 0 #_natM_type:_0=1Parm; 1=N_breakpoints;_2=Lorenzen;_3=agespecific;_4=agespec_withseasinterpolate;_5=BETA:_Maunder_link_to_maturity;_6=Lorenzen_range
   #_no additional input for selected M option; read 1P per morph
 #
-2 # GrowthModel: 1=vonBert with L1&L2; 2=Richards with L1&L2; 3=age_specific_K_incr; 4=age_specific_K_decr; 5=age_specific_K_each; 6=NA; 7=NA; 8=growth cessation
+3 # GrowthModel: 1=vonBert with L1&L2; 2=Richards with L1&L2; 3=age_specific_K_incr; 4=age_specific_K_decr; 5=age_specific_K_each; 6=NA; 7=NA; 8=growth cessation
 0 #_Age(post-settlement) for L1 (aka Amin); first growth parameter is size at this age; linear growth below this
 25 #_Age(post-settlement) for L2 (aka Amax); 999 to treat as Linf
 -998 #_exponential decay for growth above maxage (value should approx initial Z; -999 replicates 3.24; -998 to not allow growth above maxage)
 0  #_placeholder for future growth feature
+3 # number of K multipliers to read
+2 3 4 # ages for K multiplier
+
 #
 0 #_SD_add_to_LAA (set to 0.1 for SS2 V1.x compatibility)
 0 #_CV_Growth_Pattern:  0 CV=f(LAA); 1 CV=F(A); 2 SD=F(LAA); 3 SD=F(A); 4 logSD=F(A)
@@ -75,8 +78,10 @@
 # Sex: 1  BioPattern: 1  Growth
  10 45 21.6591 36 10 6 2 0 0 0 0 0 0 0 # L_at_Amin_Fem_GP_1
  40 90 71.654 70 10 6 4 0 0 0 0 0 0 0 # L_at_Amax_Fem_GP_1
- 0.05 0.25 0.14724 0.15 0.8 6 4 0 0 0 0 0 0 0 # Richards_K_Fem_GP_1
- 0.1 2 1 1 0.8 0 -3 0 0 0 0 0 0 0 # Richards_beta_Fem_GP_1
+ 0.05 0.25 0.14724 0.15 0.8 6 4 0 0 0 0 0 0 0 # VonBert_K_young_Fem_GP_1
+ 0.5 3 1 1 1 -6 0 0 0 0 0 0 0 0 # Age_K_mult_Fem_GP_1_a_2
+ 0.5 3 1 1 1 -6 0 0 0 0 0 0 0 0 # Age_K_mult_Fem_GP_1_a_3
+ 0.5 3 1 1 1 -6 0 0 0 0 0 0 0 0 # Age_K_mult_Fem_GP_1_a_4
  0.05 0.25 0.1 0.1 0.8 0 -3 0 0 0 0 0 0 0 # CV_young_Fem_GP_1
  0.05 0.25 0.1 0.1 0.8 0 -3 0 0 0 0 0 0 0 # CV_old_Fem_GP_1
 # Sex: 1  BioPattern: 1  WtLen
