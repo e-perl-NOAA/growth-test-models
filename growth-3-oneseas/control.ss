@@ -79,9 +79,9 @@
  10 45 21.6591 36 10 6 2 0 0 0 0 0 0 0 # L_at_Amin_Fem_GP_1
  40 90 71.654 70 10 6 4 0 0 0 0 0 0 0 # L_at_Amax_Fem_GP_1
  0.05 0.25 0.14724 0.15 0.8 6 4 0 0 0 0 0 0 0 # VonBert_K_young_Fem_GP_1
- 0.05 1 0.2 1 1 -6 0 0 0 0 0 0 0 0 # Age_K_mult_Fem_GP_1_a_2
- 0.05 1 0.25 1 1 -6 0 0 0 0 0 0 0 0 # Age_K_mult_Fem_GP_1_a_3
- 0.05 1 0.3 1 1 -6 0 0 0 0 0 0 0 0 # Age_K_mult_Fem_GP_1_a_4
+ 0.5 3 1 1 1 -6 0 0 0 0 0 0 0 0 # Age_K_mult_Fem_GP_1_a_2
+ 0.5 3 1 1 1 -6 0 0 0 0 0 0 0 0 # Age_K_mult_Fem_GP_1_a_3
+ 0.5 3 1 1 1 -6 0 0 0 0 0 0 0 0 # Age_K_mult_Fem_GP_1_a_4
  0.05 0.25 0.1 0.1 0.8 0 -3 0 0 0 0 0 0 0 # CV_young_Fem_GP_1
  0.05 0.25 0.1 0.1 0.8 0 -3 0 0 0 0 0 0 0 # CV_old_Fem_GP_1
 # Sex: 1  BioPattern: 1  WtLen
