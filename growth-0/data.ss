@@ -11,8 +11,8 @@
 #V3.30.24.1;_safe;_compile_date:_Sep 18 2025;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_13.2
 1971 #_StartYr
 2001 #_EndYr
-2 #_Nseas
- 6 6 #_months/season
+1 #_Nseas
+ 12 #_months/season
 2 #_Nsubseasons (even number, minimum is 2)
 1 #_spawn_month
 2 #_Nsexes: 1, 2, -1  (use -1 for 1 sex setup with SSB multiplied by female_frac parameter)

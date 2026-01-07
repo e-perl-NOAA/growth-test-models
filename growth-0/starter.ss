@@ -8,7 +8,7 @@
 #C starter comment here
 data.ss #_datfile
 control.ss #_ctlfile
-1 # read from .par file
+0 #_init_values_src:  0 (use init values in control file); 1 (use ss3.par)
 0 #_screen_display:  0 (minimal); 1 (one line per iter); 2 (each logL)
 1 #_report_table_selection:  0 (minimal; no wtatage.ss_new); 1 (all tables); 2 (brief), 3 (custom, read list) 
 # COND: custom report options: -100 to start with minimal; -101 to start with all; -number to remove, +number to add, -999 to end
