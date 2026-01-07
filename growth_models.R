@@ -67,10 +67,37 @@ plots <- purrr::map2(all_models, seas_vec, ~r4ss::SSplotBiology(
   print = TRUE
 ))
 
-# growdat <- replist[["endgrowth"]][
-#       replist[["endgrowth"]][["Seas"]] == seas_vec,
-#     ]
 
+growth_df <- all_models |> 
+  purrr::map("growthseries") |>    # Extract $growthseries from every element
+  purrr::list_rbind(names_to = "model_name")
+
+write_csv(combined_growth, "all_models_growthseries.csv")
+
+
+
+# Write as text file
+output_file <- "all_models_growth_report.txt"
+
+# specific 'clean' start: If file exists, delete it so we don't append to old runs
+if (file.exists(output_file)) file.remove(output_file)
+
+# Iterate and append to the file
+purrr::iwalk(all_models, function(model_obj, model_name) {
+  # A. Write the Model Name followed by a new line
+  cat(model_name, "\n", file = output_file, append = TRUE)
+  # B. Write the growthseries dataframe
+  # We use write.table for a clean text look (sep="\t" makes it tab-separated)
+    write.table(model_obj$growthseries, 
+                file = output_file, 
+                append = TRUE, 
+                row.names = FALSE, 
+                quote = FALSE, 
+                sep = "\t") # Change to sep="," if you prefer CSV format
+  
+  # C. Write two new lines for spacing before the next entry
+  cat("\n\n", file = output_file, append = TRUE)
+})
 
 
 
