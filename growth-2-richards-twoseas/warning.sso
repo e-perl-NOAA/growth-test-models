@@ -1,0 +1,8 @@
+Note 1 Information: Max data length bin: 90  < max pop len bins: 94; so will accumulate larger pop len bins
+Warning 1 Adjustment: Growth output stderr requested but no growth parameters are estimated, changing growth stddev reporting specifications to 0
+72.7832 72.0777
+70.2748 69.5844
+Warning 2 : 1st iteration warning: catch logL > 50% total logL; check configuration; suggest start with larger R0
+Warning 3 : Main recdev biasadj is >2 times ratio of rmse to sigmaR
+Note 2 Information: A revised protocol for the Fcast_yr specification is available and recommended.
+ 3 warnings  and 2 notes 
