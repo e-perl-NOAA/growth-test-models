@@ -32,7 +32,7 @@ run_model_from_par <- function(model_dir) {
     r4ss::run(
       dir = model_dir,
       exe = here::here("ss3.exe"),
-      extras = "-maxfn 0 -phase 50 -nohess",
+      extras = "-stopph 0 -nohess",
       skipfinished = FALSE,
       verbose = TRUE
     )
@@ -50,4 +50,27 @@ future::plan(future::multisession, workers = ncores)
 furrr::future_map(other_mod_paths[-1], run_model_from_par, .progress = TRUE)
 
 future::plan(future::sequential)
+
+## 3. Get output
+
+all_models <- r4ss::SSgetoutput(dirvec = other_mod_paths[2:19], modelnames = basename(other_mod_paths[2:19]))
+
+# Create a vector of seasons matching the list order
+seas_vec <- ifelse(grepl("twoseas", names(all_models)), 2, 1)
+
+# Map over both the models and the season vector
+# .x is the model, .y is the season
+plots <- purrr::map2(all_models, seas_vec, ~r4ss::SSplotBiology(
+  replist = .x,
+  subplots = 1:2,
+  seas = .y,
+  print = TRUE
+))
+
+# growdat <- replist[["endgrowth"]][
+#       replist[["endgrowth"]][["Seas"]] == seas_vec,
+#     ]
+
+
+
 
