@@ -1,0 +1,14 @@
+Warning 1 : Season durations sum to <11.9, so SS3 assumes you are doing years as pseudo-seasons.
+There can be only 1 season in this timestep and SS3 will ignore month input and assume all observation occur at middle of this pseudo-year
+mortality, growth and movement rates are per annum, so will get multiplied by the duration of this timestep as they are used.
+What gets reported as age is now age in timesteps; and input of age-specific M or K requires one entry per timestep
+Similarly, output of age-specific quantities is in terms of number of timesteps, not real years
+spawn_month and settlement_month in control file are best set to 1.0 when doing years as pseudo-seasons
+
+Note 1 Information: Max data length bin: 90  < max pop len bins: 94; so will accumulate larger pop len bins
+Warning 2 Adjustment: Growth output stderr requested but no growth parameters are estimated, changing growth stddev reporting specifications to 0
+71.0142 70.3105
+69.1783 68.4907
+Warning 3 : Main recdev biasadj is >2 times ratio of rmse to sigmaR
+Note 2 Information: A revised protocol for the Fcast_yr specification is available and recommended.
+ 3 warnings  and 2 notes 

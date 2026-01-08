@@ -7,8 +7,8 @@ spawn_month and settlement_month in control file are best set to 1.0 when doing 
 
 Note 1 Information: Max data length bin: 90  < max pop len bins: 94; so will accumulate larger pop len bins
 Warning 2 Adjustment: Growth output stderr requested but no growth parameters are estimated, changing growth stddev reporting specifications to 0
-77.7238 77.1831
-74.3991 73.8315
+70.0427 69.5463
+68.3486 67.8213
 Warning 3 : Main recdev biasadj is >2 times ratio of rmse to sigmaR
 Note 2 Information: A revised protocol for the Fcast_yr specification is available and recommended.
  3 warnings  and 2 notes 

@@ -5,9 +5,9 @@
 #_User_info_available_at:_https://nmfs-ost.github.io/ss3-website/
 #_Source_code_at:_https://github.com/nmfs-ost/ss3-source-code
 
-StartTime: Wed Jan  7 14:38:02 2026
-EndTime: Wed Jan  7 14:38:02 2026
-This run took: 0 hours, 0 minutes, 0 seconds.
+StartTime: Thu Jan  8 21:27:44 2026
+EndTime: Thu Jan  8 21:27:45 2026
+This run took: 0 hours, 0 minutes, 1 seconds.
 Data_File: data.ss
 Control_File: control.ss
 Start_parm_values_from_control_file
