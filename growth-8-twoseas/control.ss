@@ -73,10 +73,10 @@
 # Sex: 1  BioPattern: 1  NatMort
  0.05 0.15 0.1 0.1 0.8 0 -3 0 0 0 0 0 0 0 # NatM_uniform_Fem_GP_1
 # Sex: 1  BioPattern: 1  Growth
- 10 45 21.6597 36 10 6 -2 0 0 0 0 0 0 0 # L_at_Amin_Fem_GP_1
- 40 90 71.6551 70 10 6 -4 0 0 0 0 0 0 0 # L_at_Amax_Fem_GP_1
- 0.05 0.25 0.14723 0.15 0.8 6 -4 0 0 0 0 0 0 0 # VonBert_K_Fem_GP_1
- -2 2 1 1 99 0 -4 0 0 0 0 0.5 0 0 # Cessation_Fem_GP_1
+ 10 45 26.7068 36 10 6 -2 0 0 0 0 0 0 0 # L_at_Amin_Fem_GP_1
+ 40 90 71.0416 70 10 6 -2 0 0 0 0 0 0 0 # Linf_Fem_GP_1
+ 0.05 20 5.04813 0.15 0.8 6 -2 0 0 0 0 0 0 0 # VonBert_K_Fem_GP_1
+ 0.1 5 0.271359 1 0 0 -3 0 0 0 0 0 0 0 # Cessation_Fem_GP_1
  0.05 0.25 0.1 0.1 0.8 0 -3 0 0 0 0 0 0 0 # CV_young_Fem_GP_1
  0.05 0.25 0.1 0.1 0.8 0 -3 0 0 0 0 0 0 0 # CV_old_Fem_GP_1
 # Sex: 1  BioPattern: 1  WtLen
@@ -91,9 +91,9 @@
  0.05 0.15 0.1 0.1 0.8 0 -3 0 0 0 0 0 0 0 # NatM_uniform_Mal_GP_1
 # Sex: 2  BioPattern: 1  Growth
  0 45 0 36 10 0 -3 0 0 0 0 0 0 0 # L_at_Amin_Mal_GP_1
- 40 90 69.5405 70 10 6 -4 0 0 0 0 0 0 0 # L_at_Amax_Mal_GP_1
- 0.05 0.25 0.163469 0.15 0.8 6 -4 0 0 0 0 0 0 0 # VonBert_K_Mal_GP_1
- -2 2 1 1 99 0 -4 0 0 0 0 0.5 0 0 # Cessation_Mal_GP_1
+ 40 90 69.1961 70 10 6 -2 0 0 0 0 0 0 0 # Linf_Mal_GP_1
+ 0.05 20 5.53795 0.15 0.8 6 -2 0 0 0 0 0 0 0 # VonBert_K_Mal_GP_1
+ 0.1 5 0.268257 1 0 0 -3 0 0 0 0 0 0 0 # Cessation_Mal_GP_1
  0.05 0.25 0.1 0.1 0.8 0 -3 0 0 0 0 0 0 0 # CV_young_Mal_GP_1
  0.05 0.25 0.1 0.1 0.8 0 -3 0 0 0 0 0 0 0 # CV_old_Mal_GP_1
 # Sex: 2  BioPattern: 1  WtLen
