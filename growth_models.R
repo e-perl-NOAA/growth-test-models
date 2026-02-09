@@ -5,15 +5,22 @@ library(parallelly)
 library(purrr)
 
 mod_paths <- list.dirs(here::here(), full.names = TRUE, recursive = FALSE)
+mod_paths <- grep(".git", mod_paths, invert = TRUE, value = TRUE)
 mod_names <- basename(mod_paths)
 
+r4ss::get_ss3_exe()
 ## 2. Run all other models WITHOUT estimation and hessian (as validation runs)
 run_model_from_par <- function(model_dir) {
+  if(grep("3.30.24.1", model_dir)){
+    ss3 <- "ss3.exe"
+  } else {
+    ss3 <- "ss3_new.exe"
+  }
   message("Running validation for: ", basename(model_dir))
   tryCatch({
     r4ss::run(
       dir = model_dir,
-      exe = here::here("ss3.exe"),
+      exe = here::here(ss3),
       extras = "-stopph 0 -nohess",
       skipfinished = FALSE,
       verbose = TRUE
@@ -29,13 +36,13 @@ run_model_from_par <- function(model_dir) {
 ncores <- parallelly::availableCores(omit = 1)
 future::plan(future::multisession, workers = ncores)
 
-furrr::future_map(other_mod_paths[-1], run_model_from_par, .progress = TRUE)
+furrr::future_map(mod_paths, run_model_from_par, .progress = TRUE)
 
 future::plan(future::sequential)
 
 ## 3. Get output
 
-all_models <- r4ss::SSgetoutput(dirvec = other_mod_paths[2:22], modelnames = basename(other_mod_paths[2:22]))
+all_models <- r4ss::SSgetoutput(dirvec = mod_paths, modelnames = basename(mod_paths))
 
 # Create a vector of seasons matching the list order
 seas_vec <- ifelse(grepl("twoseas", names(all_models)), 2, 1)
