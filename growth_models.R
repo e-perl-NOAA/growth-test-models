@@ -180,14 +180,11 @@ purrr::iwalk(mean_size_list, function(model_obj, model_name) {
 })
 
 growth_df <- mean_size_list |> 
-  purrr::list_rbind(names_to = "model_name") |>
-    dplyr::mutate(full_model_name = model_name) |> 
+  purrr::list_rbind(names_to = "model_name") |> 
     tidyr::separate_wider_delim(
     col = model_name,
     delim = "-",
-    names = c("growth_option", "season_setup", "model")
-  ) |>
-  dplyr::select(full_model_name, everything()) |>
-  dplyr::arrange(full_model_name)
+    names = c("Growth", "Season", "Model")
+  )
 
 write.csv(growth_df, "all_models_growthseries.csv", row.names = FALSE)
