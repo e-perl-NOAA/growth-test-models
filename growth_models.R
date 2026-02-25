@@ -8,37 +8,37 @@ mod_paths <- list.dirs(here::here(), full.names = TRUE, recursive = FALSE)
 mod_paths <- grep(".git", mod_paths, invert = TRUE, value = TRUE)
 mod_names <- basename(mod_paths)
 
-r4ss::get_ss3_exe()
-## 2. Run all other models WITHOUT estimation and hessian (as validation runs)
-run_model_from_par <- function(model_dir) {
-  if(grep("3.30.24.1", model_dir)){
-    ss3 <- "ss3.exe"
-  } else {
-    ss3 <- "ss3_new.exe"
-  }
-  message("Running validation for: ", basename(model_dir))
-  tryCatch({
-    r4ss::run(
-      dir = model_dir,
-      exe = here::here(ss3),
-      extras = "-stopph 0 -nohess",
-      skipfinished = FALSE,
-      verbose = TRUE
-    )
-    # Confirm output
-    file.exists(file.path(model_dir, "control.ss_new"))
-  }, error = function(e) {
-    message("Error: ", e$message)
-    FALSE
-  })
-}
+# r4ss::get_ss3_exe()
+# ## 2. Run all other models WITHOUT estimation and hessian (as validation runs)
+# run_model <- function(model_dir) {
+#   if(grep("3.30.24.1", model_dir)){
+#     ss3 <- "ss3.exe"
+#   } else {
+#     ss3 <- "ss3_new.exe"
+#   }
+#   message("Running validation for: ", basename(model_dir))
+#   tryCatch({
+#     r4ss::run(
+#       dir = model_dir,
+#       exe = here::here(ss3),
+#       extras = "-stopph 0 -nohess",
+#       skipfinished = FALSE,
+#       verbose = TRUE
+#     )
+#     # Confirm output
+#     file.exists(file.path(model_dir, "control.ss_new"))
+#   }, error = function(e) {
+#     message("Error: ", e$message)
+#     FALSE
+#   })
+# }
 
-ncores <- parallelly::availableCores(omit = 1)
-future::plan(future::multisession, workers = ncores)
+# ncores <- parallelly::availableCores(omit = 1)
+# future::plan(future::multisession, workers = ncores)
 
-furrr::future_map(mod_paths, run_model_from_par, .progress = TRUE)
+# furrr::future_map(mod_paths, run_model_from_par, .progress = TRUE)
 
-future::plan(future::sequential)
+# future::plan(future::sequential)
 
 ## 3. Get output
 
@@ -165,7 +165,7 @@ if (file.exists(output_file)) file.remove(output_file)
 # Iterate and append to the file
 purrr::iwalk(mean_size_list, function(model_obj, model_name) {
   # A. Write the Model Name followed by a new line
-  cat(model_name, "\n", file = output_file, append = TRUE)
+  cat(gsub("-", " ", model_name), "\n", file = output_file, append = TRUE)
   # B. Write the growthseries dataframe
   # We use write.table for a clean text look (sep="\t" makes it tab-separated)
     write.table(model_obj, 
@@ -180,6 +180,14 @@ purrr::iwalk(mean_size_list, function(model_obj, model_name) {
 })
 
 growth_df <- mean_size_list |> 
-  purrr::list_rbind(names_to = "model_name")
+  purrr::list_rbind(names_to = "model_name") |>
+    dplyr::mutate(full_model_name = model_name) |> 
+    tidyr::separate_wider_delim(
+    col = model_name,
+    delim = "-",
+    names = c("growth_option", "season_setup", "model")
+  ) |>
+  dplyr::select(full_model_name, everything()) |>
+  dplyr::arrange(full_model_name)
 
-write.csv(growth_df, "all_models_growthseries.csv")
+write.csv(growth_df, "all_models_growthseries.csv", row.names = FALSE)
