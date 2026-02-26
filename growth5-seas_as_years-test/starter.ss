@@ -12,7 +12,7 @@ control.ss #_ctlfile
 0 #_screen_display:  0 (minimal); 1 (one line per iter); 2 (each logL)
 1 #_report_table_selection:  0 (minimal; no wtatage.ss_new); 1 (all tables); 2 (brief), 3 (custom, read list) 
 # COND: custom report options: -100 to start with minimal; -101 to start with all; -number to remove, +number to add, -999 to end
-0 #_checkup:  write more 1st iteration age-specific details to echoinput.sso file (0,1) 
+1 #_checkup:  write more 1st iteration age-specific details to echoinput.sso file (0,1) 
 0 #_parmtrace:  write parm values to ParmTrace.sso:  0 (no); 1 (good_iter,active_parms); 2 (good,all); 3 (every,all); 4 (every,active)
 0 #_cumreport:  write to cumreport.sso: 0 (no); 1 (like&timeseries); 2 (add survey fits)
 1 #_prior_like:  include prior_like for non-estimated parameters (0,1) 

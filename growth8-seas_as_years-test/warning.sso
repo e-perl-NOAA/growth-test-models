@@ -8,7 +8,3 @@ spawn_month and settlement_month in control file are best set to 1.0 when doing 
 Note 1 Information: Max data length bin: 90  < max pop len bins: 94; so will accumulate larger pop len bins
 Warning 2 : Block:2 1 ends in: 2011 after retroyr+1:  2002
 Warning 3 : There is timevary biology and the legacy approach to benchmark calculations is being used; user should be aware of possible impacts to benchmark results
-Warning 4 : 1st iteration warning: ssb(endyr)/ssb(styr)= 0.00160249; suggest start with larger R0 to get near 0.4; or use depletion fleet option
-Warning 5 : Main recdev biasadj is >2 times ratio of rmse to sigmaR
-Note 2 Information: A revised protocol for the Fcast_yr specification is available and recommended.
- 5 warnings  and 2 notes 

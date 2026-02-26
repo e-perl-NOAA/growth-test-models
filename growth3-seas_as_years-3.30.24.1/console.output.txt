@@ -1,0 +1,32 @@
+###
+console output
+2026-02-26 16:22:31.993737
+###
+ 
+ reading from starter.ss
+ reading from data file
+Data read successful 999
+
+ reading forecast file 
+ reading from control file
+End of control file successful! 999
+Begin setting up parameters ...  end of parameter section 
+Evaluating biology calculations once ... done
+Starting optimization of 'ss3' in phase 1 of 1 at Thu Feb 26 16:22:31 2026
+phase= 1 | nvar=  1 | iter=  0 | nll=2.15e+04 | mag=3.14e-14 | par[  1]=dummy_parm
+Optimization completed after 0.14 s with final statistics:
+  nll=21531.614740 | mag=3.13908e-14 | par[  1]=dummy_parm
+
+Iterations: 2
+Finished calculating benchmarks
+Finished forecast
+Writing wtatage.ss_new
+mceval counter: 0
+Finished posteriors
+Finished final writing of report.sso
+Begin writing *.ss_new output files ... Finished writing *.ss_new output files
+
+!!  Run has completed  !! 
+!!  See warning.sso for 4 warnings  and 2 notes 
+
+Finished running model 'ss3' after 0.54 s.

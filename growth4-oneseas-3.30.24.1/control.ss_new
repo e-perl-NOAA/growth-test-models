@@ -56,10 +56,10 @@
 4 # GrowthModel: 1=vonBert with L1&L2; 2=Richards with L1&L2; 3=age_specific_K_incr; 4=age_specific_K_decr; 5=age_specific_K_each; 6=NA; 7=NA; 8=growth cessation
 0 #_Age(post-settlement) for L1 (aka Amin); first growth parameter is size at this age; linear growth below this
 25 #_Age(post-settlement) for L2 (aka Amax); 999 to treat as Linf
--998 #_exponential decay for growth above maxage (value should approx initial Z; -999 replicates 3.24; -998 to not allow growth above maxage)
+0.1 #_exponential decay for growth above maxage (value should approx initial Z; -999 replicates 3.24; -998 to not allow growth above maxage)
 0  #_placeholder for future growth feature
 3 # number of K multipliers to read
- 25 24 23 # ages for K multiplier
+ 4 3 2 # ages for K multiplier
 #
 0 #_SD_add_to_LAA (set to 0.1 for SS2 V1.x compatibility)
 0 #_CV_Growth_Pattern:  0 CV=f(LAA); 1 CV=F(A); 2 SD=F(LAA); 3 SD=F(A); 4 logSD=F(A)
@@ -79,9 +79,9 @@
  10 45 21.6597 36 10 6 -2 0 0 0 0 0 0 0 # L_at_Amin_Fem_GP_1
  40 90 71.6551 70 10 6 -4 0 0 0 0 0 2 2 # L_at_Amax_Fem_GP_1
  0.05 0.25 0.14723 0.15 0.8 6 -4 0 0 0 0 0 0 0 # VonBert_K_old_Fem_GP_1
- 0.5 3 1 1 1 0 -6 0 0 0 0 0 0 0 # Age_K_mult_Fem_GP_1_a_25
- 0.5 3 1 1 1 0 -6 0 0 0 0 0 0 0 # Age_K_mult_Fem_GP_1_a_24
- 0.5 3 1 1 1 0 -6 0 0 0 0 0 0 0 # Age_K_mult_Fem_GP_1_a_23
+ 0.5 3 1 1 1 0 -6 0 0 0 0 0 0 0 # Age_K_mult_Fem_GP_1_a_4
+ 0.5 3 1 1 1 0 -6 0 0 0 0 0 0 0 # Age_K_mult_Fem_GP_1_a_3
+ 0.5 3 1 1 1 0 -6 0 0 0 0 0 0 0 # Age_K_mult_Fem_GP_1_a_2
  0.05 0.25 0.1 0.1 0.8 0 -3 0 0 0 0 0 0 0 # CV_young_Fem_GP_1
  0.05 0.25 0.1 0.1 0.8 0 -3 0 0 0 0 0 0 0 # CV_old_Fem_GP_1
 # Sex: 1  BioPattern: 1  WtLen
@@ -98,9 +98,9 @@
  0 45 0 36 10 0 -3 0 0 0 0 0 0 0 # L_at_Amin_Mal_GP_1
  40 90 69.5405 70 10 6 -4 0 0 0 0 0 0 0 # L_at_Amax_Mal_GP_1
  0.05 0.25 0.163469 0.15 0.8 6 -4 0 0 0 0 0 0 0 # VonBert_K_old_Mal_GP_1
- 0.5 3 1 1 1 0 -6 0 0 0 0 0 0 0 # Age_K_mult_Mal_GP_1_a_25
- 0.5 3 1 1 1 0 -6 0 0 0 0 0 0 0 # Age_K_mult_Mal_GP_1_a_24
- 0.5 3 1 1 1 0 -6 0 0 0 0 0 0 0 # Age_K_mult_Mal_GP_1_a_23
+ 0.5 3 1 1 1 0 -6 0 0 0 0 0 0 0 # Age_K_mult_Mal_GP_1_a_4
+ 0.5 3 1 1 1 0 -6 0 0 0 0 0 0 0 # Age_K_mult_Mal_GP_1_a_3
+ 0.5 3 1 1 1 0 -6 0 0 0 0 0 0 0 # Age_K_mult_Mal_GP_1_a_2
  0.05 0.25 0.1 0.1 0.8 0 -3 0 0 0 0 0 0 0 # CV_young_Mal_GP_1
  0.05 0.25 0.1 0.1 0.8 0 -3 0 0 0 0 0 0 0 # CV_old_Mal_GP_1
 # Sex: 2  BioPattern: 1  WtLen
@@ -180,7 +180,7 @@
 # F rates by fleet x season
 #_year:  1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011
 # seas:  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-# FISHERY 0 0.00211832 0.0106491 0.0107494 0.0218151 0.0335344 0.0462939 0.0605559 0.0769042 0.11035 0.152282 0.171323 0.194527 0.223274 0.259698 0.307299 0.372237 0.412374 0.452185 0.486794 0.508439 0.391608 0.435282 0.495703 0.58653 0.736573 0.705142 0.918669 1.36753 2.94778 2.95 1.75585e-07 3.01832e-07 4.6963e-07 6.6126e-07 8.51706e-07 1.02254e-06 1.16948e-06 1.30011e-06 1.42758e-06 1.56517e-06
+# FISHERY 0 0.00211799 0.0106474 0.0107477 0.0218116 0.033529 0.0462862 0.0605455 0.0768905 0.11033 0.152242 0.171266 0.194449 0.223167 0.259554 0.307102 0.371956 0.412006 0.451702 0.486169 0.507652 0.390902 0.434386 0.4945 0.584776 0.73368 0.701443 0.912041 1.35205 2.92631 2.95 1.77495e-07 3.04668e-07 4.73689e-07 6.66803e-07 8.58843e-07 1.03121e-06 1.17951e-06 1.31136e-06 1.43998e-06 1.57873e-06
 #
 #_Q_setup for fleets with cpue or survey or deviation data
 #_1:  fleet number

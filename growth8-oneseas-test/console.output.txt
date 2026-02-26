@@ -1,0 +1,14 @@
+###
+console output
+2026-02-26 16:22:46.820066
+###
+ 
+ reading from starter.ss
+ reading from data file
+Data read successful 999
+
+ reading forecast file 
+ reading from control file
+End of control file successful! 999
+Begin setting up parameters ...  end of parameter section 
+Evaluating biology calculations once ... matrix column bound exceeded -- column index 1 is higher than 0 in linad99\fvma_acc.cpp:49.

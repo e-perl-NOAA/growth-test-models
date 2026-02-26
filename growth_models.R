@@ -10,28 +10,30 @@ mod_names <- basename(mod_paths)
 
 # r4ss::get_ss3_exe()
 # ## 2. Run all other models WITHOUT estimation and hessian (as validation runs)
-# run_model <- function(model_dir) {
-#   if(grep("3.30.24.1", model_dir)){
-#     ss3 <- "ss3.exe"
-#   } else {
-#     ss3 <- "ss3_new.exe"
-#   }
-#   message("Running validation for: ", basename(model_dir))
-#   tryCatch({
-#     r4ss::run(
-#       dir = model_dir,
-#       exe = here::here(ss3),
-#       extras = "-stopph 0 -nohess",
-#       skipfinished = FALSE,
-#       verbose = TRUE
-#     )
-#     # Confirm output
-#     file.exists(file.path(model_dir, "control.ss_new"))
-#   }, error = function(e) {
-#     message("Error: ", e$message)
-#     FALSE
-#   })
-# }
+run_model <- function(model_dir) {
+  if(grepl("3.30.24.1", model_dir)){
+    ss3 <- "ss3.exe"
+  } else {
+    ss3 <- "ss3_new.exe"
+  }
+  message("Running validation for: ", basename(model_dir))
+  tryCatch({
+    r4ss::run(
+      dir = model_dir,
+      exe = here::here(ss3),
+      extras = "-stopph 0 -nohess",
+      skipfinished = FALSE,
+      verbose = TRUE
+    )
+    # Confirm output
+    file.exists(file.path(model_dir, "control.ss_new"))
+  }, error = function(e) {
+    message("Error: ", e$message)
+    FALSE
+  })
+}
+
+purrr::map(mod_paths, run_model)
 
 # ncores <- parallelly::availableCores(omit = 1)
 # future::plan(future::multisession, workers = ncores)
