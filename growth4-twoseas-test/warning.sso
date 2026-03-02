@@ -1,6 +1,7 @@
 Note 1 Information: Max data length bin: 90  < max pop len bins: 94; so will accumulate larger pop len bins
 Warning 1 : Block:2 1 ends in: 2011 after retroyr+1:  2002
 Warning 2 : There is timevary biology and the legacy approach to benchmark calculations is being used; user should be aware of possible impacts to benchmark results
+Note 2 Information: plus group mean size is updated in years with time-vary growth beginning in: 1980; can turn this off with Linf_decay = -998
 Warning 3 : Main recdev biasadj is >2 times ratio of rmse to sigmaR
-Note 2 Information: A revised protocol for the Fcast_yr specification is available and recommended.
- 3 warnings  and 2 notes 
+Note 3 Information: A revised protocol for the Fcast_yr specification is available and recommended.
+ 3 warnings  and 3 notes 

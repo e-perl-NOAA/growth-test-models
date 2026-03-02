@@ -8,3 +8,8 @@ spawn_month and settlement_month in control file are best set to 1.0 when doing 
 Note 1 Information: Max data length bin: 90  < max pop len bins: 94; so will accumulate larger pop len bins
 Warning 2 : Block:2 1 ends in: 2011 after retroyr+1:  2002
 Warning 3 : There is timevary biology and the legacy approach to benchmark calculations is being used; user should be aware of possible impacts to benchmark results
+Warning 4 : plus group mean size is carried forward and NOT being updated for time-varying growth for sex: 1. Suggest setting Linf_decay = -997, or to a pos. value that approximates Z in the initial year for the plus group
+Warning 5 : plus group mean size is carried forward and NOT being updated for time-varying growth for sex: 2. Suggest setting Linf_decay = -997, or to a pos. value that approximates Z in the initial year for the plus group
+Warning 6 : Main recdev biasadj is >2 times ratio of rmse to sigmaR
+Note 2 Information: A revised protocol for the Fcast_yr specification is available and recommended.
+ 6 warnings  and 2 notes 
