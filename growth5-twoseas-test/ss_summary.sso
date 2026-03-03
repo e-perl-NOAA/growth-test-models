@@ -1,16 +1,16 @@
-#V3.30.24.beta: not an official version of SS;_safe;_compile_date:_Feb 27 2026;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_13.2
+#V3.30.24.beta: not an official version of SS;_safe;_compile_date:_Mar  3 2026;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_13.2
 data.ss #_DataFile 
 control.ss #_Control 
-Run_Date: Mon Mar  2 09:55:02 2026
+Run_Date: Tue Mar  3 16:59:48 2026
 Final_phase: 1  N_iterations: 2
 #_LIKELIHOOD 
 Label logL*Lambda
-TOTAL_LogL 3074.36
+TOTAL_LogL 2983.4
 Catch 2.09074e-12
-Survey 40.6649
-Length_comp 1318.67
-Age_comp 684.526
-Size_at_age 1045.26
+Survey 40.8779
+Length_comp 1261.75
+Age_comp 684.392
+Size_at_age 1011.15
 Recruitment -15.8356
 InitEQ_regime 0
 Sum_recdevs 0
@@ -447,14 +447,14 @@ SmryBio_2010 71956 0.0
 SmryBio_2011 72757.7 0.0
 #_survey_stdev 9
 SURVEY1_1977 12.147 0 #exp(): 188531 q: 1.67685
-SURVEY1_1980 11.9618 0 #exp(): 156659 q: 1.67685
-SURVEY1_1983 11.8621 0 #exp(): 141792 q: 1.67685
-SURVEY1_1986 11.6599 0 #exp(): 115834 q: 1.67685
-SURVEY1_1989 11.4557 0 #exp(): 94441.7 q: 1.67685
-SURVEY1_1992 11.409 0 #exp(): 90126.1 q: 1.67685
-SURVEY1_1995 11.4446 0 #exp(): 93393.7 q: 1.67685
-SURVEY1_1998 11.5054 0 #exp(): 99254.2 q: 1.67685
-SURVEY1_2001 11.5728 0 #exp(): 106170 q: 1.67685
+SURVEY1_1980 11.9644 0 #exp(): 157059 q: 1.67685
+SURVEY1_1983 11.8649 0 #exp(): 142187 q: 1.67685
+SURVEY1_1986 11.6632 0 #exp(): 116219 q: 1.67685
+SURVEY1_1989 11.4596 0 #exp(): 94803.4 q: 1.67685
+SURVEY1_1992 11.4128 0 #exp(): 90470 q: 1.67685
+SURVEY1_1995 11.4483 0 #exp(): 93738.7 q: 1.67685
+SURVEY1_1998 11.509 0 #exp(): 99603.7 q: 1.67685
+SURVEY1_2001 11.5762 0 #exp(): 106528 q: 1.67685
 #_Biomass
 TotBio_Virgin 124301 0.0
 TotBio_Initial 124301 0.0
