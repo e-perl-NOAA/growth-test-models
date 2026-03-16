@@ -5,7 +5,7 @@ library(parallelly)
 library(purrr)
 
 mod_paths <- list.dirs(here::here(), full.names = TRUE, recursive = FALSE)
-mod_paths <- grep(".git", mod_paths, invert = TRUE, value = TRUE)
+mod_paths <- mod_paths[!basename(mod_paths) %in% c(".git", ".Rproj.user")]
 mod_names <- basename(mod_paths)
 
 # r4ss::get_ss3_exe()
@@ -18,6 +18,9 @@ run_model <- function(model_dir) {
   }
   message("Running validation for: ", basename(model_dir))
   tryCatch({
+    old_reports <- c("Report.sso", "CompReport.sso", "cumreport.sso")
+    file.remove(file.path(model_dir, old_reports))
+    
     r4ss::run(
       dir = model_dir,
       exe = here::here(ss3),
