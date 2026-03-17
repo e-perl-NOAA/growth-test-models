@@ -55,7 +55,7 @@
 #
 2 # GrowthModel: 1=vonBert with L1&L2; 2=Richards with L1&L2; 3=age_specific_K_incr; 4=age_specific_K_decr; 5=age_specific_K_each; 6=NA; 7=NA; 8=growth cessation
 0 #_Age(post-settlement) for L1 (aka Amin); first growth parameter is size at this age; linear growth below this
-25 #_Age(post-settlement) for L2 (aka Amax); 999 to treat as Linf
+19 #_Age(post-settlement) for L2 (aka Amax); 999 to treat as Linf
 0.1 #_exponential decay for growth within plus group and control for time-varying plus group size  (value should approx initial Z; -999 replicates 3.24 (Z=0.2); -998 or -997 to not allow growth within plus group)
  #_ -998 also disables time-varying changes in plus group; -997 allows updating time-varying plus group
  #_ best option is to provide a value for initial Z
@@ -176,7 +176,7 @@
 # F rates by fleet x season
 #_year:  1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011
 # seas:  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-# FISHERY 0 0.00211799 0.0106474 0.0107477 0.0218116 0.033529 0.0462862 0.0605455 0.0768905 0.11033 0.152242 0.171265 0.194448 0.223167 0.259553 0.3071 0.371954 0.412003 0.451698 0.486164 0.507646 0.390896 0.434379 0.49449 0.584762 0.733658 0.701415 0.91199 1.35193 2.92592 2.95 1.77524e-07 3.0471e-07 4.73748e-07 6.66881e-07 8.58942e-07 1.03133e-06 1.17965e-06 1.31151e-06 1.44014e-06 1.57891e-06
+# FISHERY 0 0.00191235 0.00961035 0.00969561 0.0196611 0.0301818 0.0415806 0.0542364 0.068618 0.0979258 0.134028 0.149176 0.167227 0.188994 0.215671 0.249095 0.292248 0.310918 0.324834 0.330425 0.3236 0.235372 0.248236 0.26359 0.282747 0.307278 0.246856 0.259534 0.275039 0.294181 0.31813 6.50785e-06 7.47643e-06 0.0034981 0.0148221 0.023287 0.0298357 0.0351313 0.0396063 0.0435199 0.0470145
 #
 #_Q_setup for fleets with cpue or survey or deviation data
 #_1:  fleet number
