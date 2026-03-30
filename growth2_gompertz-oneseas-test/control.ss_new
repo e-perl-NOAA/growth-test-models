@@ -1,4 +1,4 @@
-#V3.30.24.beta: not an official version of SS;_safe;_compile_date:_Mar 12 2026;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_13.2
+#V3.30.24.beta: not an official version of SS;_safe;_compile_date:_Mar 24 2026;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_13.2
 #_Stock_Synthesis_is_a_work_of_the_U.S._Government_and_is_not_subject_to_copyright_protection_in_the_United_States.
 #_Foreign_copyrights_may_apply._See_copyright.txt_for_more_information.
 #_User_support_available_at:_https://groups.google.com/g/ss3-forum_and_NMFS.Stock.Synthesis@noaa.gov
@@ -79,7 +79,7 @@
  10 45 21.6597 36 10 6 -2 0 0 0 0 0 0 0 # L_at_Amin_Fem_GP_1
  40 90 71.6551 70 10 6 -4 0 0 0 0 0 2 2 # L_at_Amax_Fem_GP_1
  0.05 0.25 0.14723 0.15 0.8 6 -4 0 0 0 0 0 0 0 # VonBert_K_Fem_GP_1
- 0.01 2 .0001 1 99 0 -4 0 0 0 0 0 0 0 # Richards_Fem_GP_1
+ 0.01 2 0.0001 1 99 0 -4 0 0 0 0 0 0 0 # Richards_Fem_GP_1
  0.05 0.25 0.1 0.1 0.8 0 -3 0 0 0 0 0 0 0 # CV_young_Fem_GP_1
  0.05 0.25 0.1 0.1 0.8 0 -3 0 0 0 0 0 0 0 # CV_old_Fem_GP_1
 # Sex: 1  BioPattern: 1  WtLen
@@ -176,7 +176,7 @@
 # F rates by fleet x season
 #_year:  1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011
 # seas:  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-# FISHERY 0 0.00191235 0.00961035 0.00969561 0.0196611 0.0301818 0.0415806 0.0542364 0.068618 0.0979258 0.134028 0.149176 0.167227 0.188994 0.215671 0.249095 0.292248 0.310918 0.324834 0.330425 0.3236 0.235372 0.248236 0.26359 0.282747 0.307278 0.246856 0.259534 0.275039 0.294181 0.31813 6.50785e-06 7.47643e-06 0.0034981 0.0148221 0.023287 0.0298357 0.0351313 0.0396063 0.0435199 0.0470145
+# FISHERY 0 0.00206418 0.0103758 0.0104704 0.0212358 0.0326139 0.0449717 0.0587554 0.0745348 0.106873 0.147438 0.165896 0.188485 0.216594 0.252372 0.299349 0.363763 0.404621 0.445818 0.482511 0.506691 0.391744 0.436181 0.497083 0.588258 0.73932 0.709256 0.92868 1.39917 2.95012 2.95 1.69709e-07 2.92319e-07 4.6467e-07 6.81992e-07 9.27887e-07 1.17814e-06 1.40921e-06 1.60679e-06 1.76934e-06 1.90591e-06
 #
 #_Q_setup for fleets with cpue or survey or deviation data
 #_1:  fleet number

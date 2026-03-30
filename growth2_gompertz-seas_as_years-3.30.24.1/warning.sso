@@ -8,6 +8,7 @@ spawn_month and settlement_month in control file are best set to 1.0 when doing 
 Note 1 Information: Max data length bin: 90  < max pop len bins: 94; so will accumulate larger pop len bins
 Warning 2 : Block:2 1 ends in: 2011 after retroyr+1:  2002
 Warning 3 : There is timevary biology and the legacy approach to benchmark calculations is being used; user should be aware of possible impacts to benchmark results
-Warning 4 : Main recdev biasadj is >2 times ratio of rmse to sigmaR
+Warning 4 : parameter init value is less than parameter min 0.0001 < 0.01 for parm: 5; search for <now check> in echoinput.sso for parm_type
+Warning 5 : Main recdev biasadj is >2 times ratio of rmse to sigmaR
 Note 2 Information: A revised protocol for the Fcast_yr specification is available and recommended.
- 4 warnings  and 2 notes 
+ 5 warnings  and 2 notes 
