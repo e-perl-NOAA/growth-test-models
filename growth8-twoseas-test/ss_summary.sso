@@ -1,7 +1,7 @@
-#V3.30.24.beta: not an official version of SS;_safe;_compile_date:_Mar 24 2026;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_13.2
+#V3.30.24.beta: not an official version of SS;_safe;_compile_date:_Apr  6 2026;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_13.2
 data.ss #_DataFile 
 control.ss #_Control 
-Run_Date: Mon Mar 30 12:37:01 2026
+Run_Date: Thu Apr  9 15:16:58 2026
 Final_phase: 1  N_iterations: 2
 #_LIKELIHOOD 
 Label logL*Lambda
@@ -24,9 +24,9 @@ Crash_Pen 0
 #label value se active? range
 #_BIOLOGY
 NatM_uniform_Fem_GP_1 0.1 0 Fix 0.499995
-L_at_Amin_Fem_GP_1 26.7068 0 Fix 0.477337
+L_at_Age0_Fem_GP_1 26.7068 0 Fix 0.477337
 Linf_Fem_GP_1 71.0416 0 Fix 0.620832
-VonBert_K_Fem_GP_1 5.04813 0 Fix 0.250533
+rmax_Fem_GP_1 5.04813 0 Fix 0.250533
 Cessation_Fem_GP_1 0.271359 0 Fix 0.0349712
 CV_young_Fem_GP_1 0.1 0 Fix 0.249999
 CV_old_Fem_GP_1 0.1 0 Fix 0.249999
@@ -37,9 +37,9 @@ Mat_slope_Fem_GP_1 -0.25 0 Fix 0.458333
 Eggs/kg_inter_Fem_GP_1 1 0 Fix 0.666667
 Eggs/kg_slope_wt_Fem_GP_1 0 0 Fix 0.5
 NatM_uniform_Mal_GP_1 0.1 0 Fix 0.499995
-L_at_Amin_Mal_GP_1 0 0 Fix 0
+L_at_Age0_Mal_GP_1 0 0 Fix 0
 Linf_Mal_GP_1 69.1961 0 Fix 0.583922
-VonBert_K_Mal_GP_1 5.53795 0 Fix 0.275085
+rmax_Mal_GP_1 5.53795 0 Fix 0.275085
 Cessation_Mal_GP_1 0.268257 0 Fix 0.0343382
 CV_young_Mal_GP_1 0.1 0 Fix 0.249999
 CV_old_Mal_GP_1 0.1 0 Fix 0.249999

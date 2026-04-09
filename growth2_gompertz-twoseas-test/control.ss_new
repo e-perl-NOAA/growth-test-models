@@ -1,4 +1,4 @@
-#V3.30.24.beta: not an official version of SS;_safe;_compile_date:_Mar 24 2026;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_13.2
+#V3.30.24.beta: not an official version of SS;_safe;_compile_date:_Apr  6 2026;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_13.2
 #_Stock_Synthesis_is_a_work_of_the_U.S._Government_and_is_not_subject_to_copyright_protection_in_the_United_States.
 #_Foreign_copyrights_may_apply._See_copyright.txt_for_more_information.
 #_User_support_available_at:_https://groups.google.com/g/ss3-forum_and_NMFS.Stock.Synthesis@noaa.gov
@@ -56,9 +56,12 @@
 2 # GrowthModel: 1=vonBert with L1&L2; 2=Richards with L1&L2; 3=age_specific_K_incr; 4=age_specific_K_decr; 5=age_specific_K_each; 6=NA; 7=NA; 8=growth cessation
 0 #_Age(post-settlement) for L1 (aka Amin); first growth parameter is size at this age; linear growth below this
 19 #_Age(post-settlement) for L2 (aka Amax); 999 to treat as Linf
-0.1 #_exponential decay for growth within plus group and control for time-varying plus group size  (value should approx initial Z; -999 replicates 3.24 (Z=0.2); -998 or -997 to not allow growth within plus group)
- #_ -998 also disables time-varying changes in plus group; -997 allows updating time-varying plus group
- #_ best option is to provide a value for initial Z
+0.1 #_exponential decay for growth within plus group and control for time-varying plus group size 
+#_only important when growth does not get near Linf by maxage
+#_value should approx initial Z; or use a code:  -999 replicates 3.24 (with Z=0.2 and numbers weighted updating in years with time-varying growth)
+#_-998 ignores growth within plus group in initial year and disables time-varying changes in plus group mean size
+#_-997 ignores growth within plus group in initial year and enables updating time-varying plus group
+#
 0  #_placeholder for future growth feature
 #
 0 #_SD_add_to_LAA (set to 0.1 for SS2 V1.x compatibility)
@@ -176,7 +179,7 @@
 # F rates by fleet x season
 #_year:  1971 1971 1972 1972 1973 1973 1974 1974 1975 1975 1976 1976 1977 1977 1978 1978 1979 1979 1980 1980 1981 1981 1982 1982 1983 1983 1984 1984 1985 1985 1986 1986 1987 1987 1988 1988 1989 1989 1990 1990 1991 1991 1992 1992 1993 1993 1994 1994 1995 1995 1996 1996 1997 1997 1998 1998 1999 1999 2000 2000 2001 2001 2002 2002 2003 2003 2004 2004 2005 2005 2006 2006 2007 2007 2008 2008 2009 2009 2010 2010 2011 2011
 # seas:  1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2
-# FISHERY 0 0 0.00412955 0 0.0207566 0 0.0209424 0 0.042466 0 0.0652015 0 0.0898798 0 0.117391 0 0.148874 0 0.213501 0 0.294549 0 0.331535 0 0.37717 0 0.434634 0 0.508785 0 0.607557 0 0.745018 0 0.837924 0 0.934723 0 1.02474 0 1.08954 0 0.849202 0 0.95046 0 1.09046 0 1.30495 0 1.67554 0 1.65915 0 2.28898 0 2.95 0 2.95 0 2.95 0 1.02648e-06 0 1.52825e-06 0 2.14362e-06 0 2.83528e-06 0 3.55003e-06 0 4.23314e-06 0 4.84418e-06 0 5.36775e-06 0 5.81511e-06 0 6.21727e-06 0
+# FISHERY 0 0 0.0041295 0 0.0207564 0 0.0209421 0 0.0424655 0 0.0652007 0 0.0898786 0 0.117389 0 0.148871 0 0.213497 0 0.294499 0 0.331281 0 0.376282 0 0.43225 0 0.503422 0 0.596726 0 0.724358 0 0.804233 0 0.883573 0 0.9521 0 0.993362 0 0.761721 0 0.840195 0 0.944951 0 1.09688 0 1.33738 0 1.22978 0 1.51522 0 2.03233 0 2.95 0 2.95 0 1.44424e-06 0 2.06761e-06 0 2.82786e-06 0 3.68896e-06 0 4.59494e-06 0 5.48221e-06 0 6.29798e-06 0 7.01747e-06 0 7.64982e-06 0 8.23028e-06 0
 #
 #_Q_setup for fleets with cpue or survey or deviation data
 #_1:  fleet number
