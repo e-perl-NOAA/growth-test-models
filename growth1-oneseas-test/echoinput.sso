@@ -3472,6 +3472,6 @@ Finished final writing of report.sso
 Begin writing data_echo.ss_new file
 Write starter.ss_new file 
 Write forecast.ss_new file 
-Note 2 Information: A revised protocol for the Fcast_yr specification is available and recommended.
+Note 3 Information: A revised protocol for the Fcast_yr specification is available and recommended.
 Write control.ss_new file 
 Begin final output calculations and warnings

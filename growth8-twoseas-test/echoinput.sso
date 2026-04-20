@@ -1731,6 +1731,7 @@ GROWTH2 by season in year 1980
 sex: 1 GP: 1 Lmin: 26.7068 L_max: 72 Linf: 72 VBK@age:  5.04813
 t50 for growth cessation: 8.63434 using decay_rate: 0.271359
 1980 G2+ seas.sub: 1.1 g:1 size:   28.9802 33.4326 37.7272 41.8312 45.7095 49.327 52.6514 plusgroup: 71.0385
+1980 40 prevent shrink -0.000380446 0.50951 71.0385 71.0383
 1980 G2+ seas.sub: 2.1 g:1 size:   0 31.2536 35.6378 39.8489 43.8525 47.6128 51.0949 plusgroup: 71.0385
 sex: 2 GP: 2 Lmin: 26.7068 L_max: 69.1961 Linf: 69.1961 VBK@age:  5.53795
 t50 for growth cessation: 7.16315 using decay_rate: 0.268257
@@ -1869,6 +1870,7 @@ GROWTH2 by season in year 1981
 sex: 1 GP: 1 Lmin: 26.7068 L_max: 72 Linf: 72 VBK@age:  5.04813
 t50 for growth cessation: 8.63434 using decay_rate: 0.271359
 1981 G2+ seas.sub: 1.1 g:1 size:   2.27339 33.4587 37.7594 41.8702 45.7558 49.3807 52.712 plusgroup: 71.039
+1981 40 prevent shrink -0.000740896 0.518514 71.039 71.0386
 1981 G2+ seas.sub: 2.1 g:1 size:   0 4.54678 35.6639 39.8811 43.8915 47.6591 51.1486 plusgroup: 71.039
 sex: 2 GP: 2 Lmin: 26.7068 L_max: 69.1961 Linf: 69.1961 VBK@age:  5.53795
 t50 for growth cessation: 7.16315 using decay_rate: 0.268257
@@ -1995,6 +1997,7 @@ GROWTH2 by season in year 1982
 sex: 1 GP: 1 Lmin: 26.7068 L_max: 72 Linf: 72 VBK@age:  5.04813
 t50 for growth cessation: 8.63434 using decay_rate: 0.271359
 1982 G2+ seas.sub: 1.1 g:1 size:   2.27339 6.75194 37.7856 41.9024 45.7948 49.427 52.7657 plusgroup: 71.0394
+1982 40 prevent shrink -0.00107513 0.526852 71.0394 71.0389
 1982 G2+ seas.sub: 2.1 g:1 size:   0 4.54678 8.95711 39.9072 43.9237 47.6981 51.1949 plusgroup: 71.0394
 sex: 2 GP: 2 Lmin: 26.7068 L_max: 69.1961 Linf: 69.1961 VBK@age:  5.53795
 t50 for growth cessation: 7.16315 using decay_rate: 0.268257
@@ -2121,6 +2124,7 @@ GROWTH2 by season in year 1983
 sex: 1 GP: 1 Lmin: 26.7068 L_max: 72 Linf: 72 VBK@age:  5.04813
 t50 for growth cessation: 8.63434 using decay_rate: 0.271359
 1983 G2+ seas.sub: 1.1 g:1 size:   2.27339 6.75194 11.0788 41.9286 45.827 49.466 52.812 plusgroup: 71.0398
+1983 40 prevent shrink -0.00137497 0.53432 71.0398 71.0392
 1983 G2+ seas.sub: 2.1 g:1 size:   0 4.54678 8.95711 13.2004 43.9499 47.7303 51.2339 plusgroup: 71.0398
 sex: 2 GP: 2 Lmin: 26.7068 L_max: 69.1961 Linf: 69.1961 VBK@age:  5.53795
 t50 for growth cessation: 7.16315 using decay_rate: 0.268257
@@ -2259,6 +2263,7 @@ GROWTH2 by season in year 1984
 sex: 1 GP: 1 Lmin: 26.7068 L_max: 72 Linf: 72 VBK@age:  5.04813
 t50 for growth cessation: 8.63434 using decay_rate: 0.271359
 1984 G2+ seas.sub: 1.1 g:1 size:   2.27339 6.75194 11.0788 15.2218 45.8531 49.4982 52.851 plusgroup: 71.0403
+1984 40 prevent shrink -0.00162975 0.540654 71.0403 71.0395
 1984 G2+ seas.sub: 2.1 g:1 size:   0 4.54678 8.95711 13.2004 17.2431 47.7564 51.2661 plusgroup: 71.0403
 sex: 2 GP: 2 Lmin: 26.7068 L_max: 69.1961 Linf: 69.1961 VBK@age:  5.53795
 t50 for growth cessation: 7.16315 using decay_rate: 0.268257
@@ -2385,6 +2390,7 @@ GROWTH2 by season in year 1985
 sex: 1 GP: 1 Lmin: 26.7068 L_max: 72 Linf: 72 VBK@age:  5.04813
 t50 for growth cessation: 8.63434 using decay_rate: 0.271359
 1985 G2+ seas.sub: 1.1 g:1 size:   2.27339 6.75194 11.0788 15.2218 19.1463 49.5243 52.8832 plusgroup: 71.0407
+1985 40 prevent shrink -0.00182544 0.54551 71.0407 71.0399
 1985 G2+ seas.sub: 2.1 g:1 size:   0 4.54678 8.95711 13.2004 17.2431 21.0496 51.2922 plusgroup: 71.0407
 sex: 2 GP: 2 Lmin: 26.7068 L_max: 69.1961 Linf: 69.1961 VBK@age:  5.53795
 t50 for growth cessation: 7.16315 using decay_rate: 0.268257
@@ -2511,6 +2517,7 @@ GROWTH2 by season in year 1986
 sex: 1 GP: 1 Lmin: 26.7068 L_max: 72 Linf: 72 VBK@age:  5.04813
 t50 for growth cessation: 8.63434 using decay_rate: 0.271359
 1986 G2+ seas.sub: 1.1 g:1 size:   2.27339 6.75194 11.0788 15.2218 19.1463 22.8175 52.9093 plusgroup: 71.0412
+1986 40 prevent shrink -0.0019437 0.54844 71.0412 71.0403
 1986 G2+ seas.sub: 2.1 g:1 size:   0 4.54678 8.95711 13.2004 17.2431 21.0496 24.5854 plusgroup: 71.0412
 sex: 2 GP: 2 Lmin: 26.7068 L_max: 69.1961 Linf: 69.1961 VBK@age:  5.53795
 t50 for growth cessation: 7.16315 using decay_rate: 0.268257
@@ -2649,6 +2656,7 @@ GROWTH2 by season in year 1987
 sex: 1 GP: 1 Lmin: 26.7068 L_max: 72 Linf: 72 VBK@age:  5.04813
 t50 for growth cessation: 8.63434 using decay_rate: 0.271359
 1987 G2+ seas.sub: 1.1 g:1 size:   2.27339 6.75194 11.0788 15.2218 19.1463 22.8175 26.2025 plusgroup: 71.0416
+1987 40 prevent shrink -0.00196054 0.548857 71.0416 71.0407
 1987 G2+ seas.sub: 2.1 g:1 size:   0 4.54678 8.95711 13.2004 17.2431 21.0496 24.5854 plusgroup: 71.0416
 sex: 2 GP: 2 Lmin: 26.7068 L_max: 69.1961 Linf: 69.1961 VBK@age:  5.53795
 t50 for growth cessation: 7.16315 using decay_rate: 0.268257
@@ -2775,6 +2783,7 @@ GROWTH2 by season in year 1988
 sex: 1 GP: 1 Lmin: 26.7068 L_max: 72 Linf: 72 VBK@age:  5.04813
 t50 for growth cessation: 8.63434 using decay_rate: 0.271359
 1988 G2+ seas.sub: 1.1 g:1 size:   2.27339 6.75194 11.0788 15.2218 19.1463 22.8175 26.2025 plusgroup: 71.0421
+1988 40 prevent shrink -0.00184453 0.545983 71.0421 71.0412
 1988 G2+ seas.sub: 2.1 g:1 size:   0 4.54678 8.95711 13.2004 17.2431 21.0496 24.5854 plusgroup: 71.0421
 sex: 2 GP: 2 Lmin: 26.7068 L_max: 69.1961 Linf: 69.1961 VBK@age:  5.53795
 t50 for growth cessation: 7.16315 using decay_rate: 0.268257
@@ -2901,6 +2910,7 @@ GROWTH2 by season in year 1989
 sex: 1 GP: 1 Lmin: 26.7068 L_max: 72 Linf: 72 VBK@age:  5.04813
 t50 for growth cessation: 8.63434 using decay_rate: 0.271359
 1989 G2+ seas.sub: 1.1 g:1 size:   2.27339 6.75194 11.0788 15.2218 19.1463 22.8175 26.2025 plusgroup: 71.0425
+1989 40 prevent shrink -0.00155466 0.538788 71.0425 71.0418
 1989 G2+ seas.sub: 2.1 g:1 size:   0 4.54678 8.95711 13.2004 17.2431 21.0496 24.5854 plusgroup: 71.0425
 sex: 2 GP: 2 Lmin: 26.7068 L_max: 69.1961 Linf: 69.1961 VBK@age:  5.53795
 t50 for growth cessation: 7.16315 using decay_rate: 0.268257
@@ -3039,6 +3049,7 @@ GROWTH2 by season in year 1990
 sex: 1 GP: 1 Lmin: 26.7068 L_max: 72 Linf: 72 VBK@age:  5.04813
 t50 for growth cessation: 8.63434 using decay_rate: 0.271359
 1990 G2+ seas.sub: 1.1 g:1 size:   2.27339 6.75194 11.0788 15.2218 19.1463 22.8175 26.2025 plusgroup: 71.043
+1990 40 prevent shrink -0.00103736 0.525911 71.043 71.0425
 1990 G2+ seas.sub: 2.1 g:1 size:   0 4.54678 8.95711 13.2004 17.2431 21.0496 24.5854 plusgroup: 71.043
 sex: 2 GP: 2 Lmin: 26.7068 L_max: 69.1961 Linf: 69.1961 VBK@age:  5.53795
 t50 for growth cessation: 7.16315 using decay_rate: 0.268257
@@ -3170,6 +3181,7 @@ GROWTH2 by season in year 1991
 sex: 1 GP: 1 Lmin: 26.7068 L_max: 72 Linf: 72 VBK@age:  5.04813
 t50 for growth cessation: 8.63434 using decay_rate: 0.271359
 1991 G2+ seas.sub: 1.1 g:1 size:   2.27339 6.75194 11.0788 15.2218 19.1463 22.8175 26.2025 plusgroup: 71.0434
+1991 40 prevent shrink -0.000222865 0.505571 71.0434 71.0433
 1991 G2+ seas.sub: 2.1 g:1 size:   0 4.54678 8.95711 13.2004 17.2431 21.0496 24.5854 plusgroup: 71.0434
 sex: 2 GP: 2 Lmin: 26.7068 L_max: 69.1961 Linf: 69.1961 VBK@age:  5.53795
 t50 for growth cessation: 7.16315 using decay_rate: 0.268257

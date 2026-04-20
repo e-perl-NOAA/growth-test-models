@@ -38,13 +38,6 @@ run_model <- function(model_dir) {
 
 purrr::map(mod_paths, run_model)
 
-# ncores <- parallelly::availableCores(omit = 1)
-# future::plan(future::multisession, workers = ncores)
-
-# furrr::future_map(mod_paths, run_model_from_par, .progress = TRUE)
-
-# future::plan(future::sequential)
-
 ## 3. Get output
 
 all_models <- r4ss::SSgetoutput(dirvec = mod_paths, modelnames = basename(mod_paths))
