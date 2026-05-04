@@ -1,6 +1,6 @@
 ###
 console output
-2026-04-20 16:08:17.834388
+2026-05-04 14:18:26.071353
 ###
  
  reading from starter.ss
@@ -12,7 +12,7 @@ Data read successful 999
 End of control file successful! 999
 Begin setting up parameters ...  end of parameter section 
 Evaluating biology calculations once ... done
-Starting optimization of 'ss3_new' in phase 1 of 1 at Mon Apr 20 16:08:16 2026
+Starting optimization of 'ss3_new' in phase 1 of 1 at Mon May  4 14:18:24 2026
 phase= 1 | nvar=  1 | iter=  0 | nll=1.55e+03 | mag=3.14e-14 | par[  1]=dummy_parm
 Optimization completed after 0.2 s with final statistics:
   nll=1548.311703 | mag=3.13908e-14 | par[  1]=dummy_parm
